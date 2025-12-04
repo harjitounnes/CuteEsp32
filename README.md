@@ -24,11 +24,25 @@ Pastikan sudah terinstal:
 
 ---
 
-## 📂 Struktur Proyek
-- CuteEsp32
-|- ProjextXX\
-    |-src\
-        - main.cpp
-|- shared 
-
+## 📂 Instalasi
+- Install Python 3.12
+- Buat Virtual environtment
+```
+python -m venv venv
+```
+- Aktifkan virtual environtment
+```
+Windows
+.\venv\Script\Activate
+Mac / Linux
+source venv/bon/activate
+```
+- Install PlatformIO
+```
+    pip install platformio
+```
+- Compile 
+``` 
+pio run -d ProjectXX
+```
 

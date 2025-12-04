@@ -5,8 +5,8 @@
 #include <StorageModule.h>
 #include <BluetoothModule.h>
 #include <OTAUpdateModule.h>
-#include <BTCommandHandler.h>
-#include "SensorReader.h"
+#include "handler/BTCommandHandler.h"
+#include "handler/SensorReader.h"
     
 BlinkModule blink(2, 500);
 LCDModule lcd(0x27, 16, 2);
