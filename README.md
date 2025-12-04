@@ -25,23 +25,26 @@ Pastikan sudah terinstal:
 ---
 
 ## 📂 Instalasi
-- Install Python 3.12
-- Buat Virtual environtment
+### Install Python 3.12
+### Buat Virtual environtment
 ```
 python -m venv venv
 ```
-- Aktifkan virtual environtment
+### Aktifkan virtual environtment
+#### Windows
 ```
-Windows
-.\venv\Script\Activate
-Mac / Linux
-source venv/bon/activate
+    .\venv\Script\Activate
+
 ```
-- Install PlatformIO
+#### Mac / Linux
+```
+    source venv/bon/activate
+```
+### Install PlatformIO
 ```
     pip install platformio
 ```
-- Compile 
+### Compile 
 ``` 
 pio run -d ProjectXX
 ```
