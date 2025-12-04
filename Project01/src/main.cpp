@@ -14,9 +14,8 @@ StorageModule storage(true, &lcd);
 WiFiModule wifi(&storage, &lcd);
 BluetoothModule bt("ESP32_Device", &lcd);
 OTAUpdateModule ota(&storage, &lcd);
-
 BTCommandHandler cmdHandler(&bt, &storage, &lcd);
-SensorReader sensorReader(&cmdHandler, 120000); // Kirim setiap 10000 ms
+SensorReader sensorReader(&cmdHandler, 10000); // Kirim setiap 120000 ms
 
 void setup() {
     Serial.begin(115200);

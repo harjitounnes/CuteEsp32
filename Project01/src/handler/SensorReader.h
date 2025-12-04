@@ -3,6 +3,8 @@
 
 #include <Arduino.h>
 #include "BTCommandHandler.h"   // handler milik kamu
+#include <SPI.h>
+#include <max6675.h>
 
 class SensorReader {
 public:
@@ -17,6 +19,10 @@ private:
     uint32_t sendInterval;
     String message;
     TaskHandle_t taskHandle;
+    int thermoDO = 19;
+    int thermoCS = 5;
+    int thermoCLK = 18;
+    MAX6675 thermocouple = MAX6675(thermoCLK, thermoCS, thermoDO);
 };
 
 #endif
