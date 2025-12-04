@@ -1,6 +1,6 @@
 {
-    "ssid": "ICON+",
-    "password": "M12@n0@mrq@15@r@",
+    "ssid": "NAMA_SSID",
+    "password": "PASSWORD_WIFI",
     "version": "1.0.0",
-    "update_url": "http://192.168.18.13:3000/firmware/check.json"
+    "update_url": "http://<IP>:3000/firmware/check.json"
 }
