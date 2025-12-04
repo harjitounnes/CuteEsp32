@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32 Firmware Status</title>
+  <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+  <div class="card">
+    <h2>ESP32 Firmware Status</h2>
+    <p>Current version: <span id="current-version"></span></p>
+    <p>Latest version: <span id="latest-version"></span></p>
+    <p id="update-msg"></p>
+    <div id="update-button"></div>
+  </div>
+
+  <!-- variabel JS dari server akan diletakkan sebelum script utama -->
+  <script id="server-vars">
+    <!--SERVER_VARS-->
+  </script>
+
+  <script src="/home.js"></script>
+</body>
+</html>
