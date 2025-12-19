@@ -75,6 +75,13 @@ void BTCommandHandler::handle(const String& msg) {
         ESP.restart();
     }
 
+    else if(msg == "*123#") {
+        send("{\"info\":\"Menjalankan motor\"}\n");
+        Serial.println("[BT] Menjalankan motor");
+        lcd->setText("BT TX: ", "Menjalankan motor");
+        delay(100); // beri waktu untuk kirim data sebelum reset
+    }
+
     else {
         send("Unknown command: " + msg + "\n");
         lcd->setText("BT TX: ", "Unknown command: " + msg);
