@@ -65,3 +65,5 @@ Interaksi dengan FileSystem (LittleFS) dikombinasikan dengan LCD dan Clink FreeR
 ### BluetoothExample
 Interaksi dengan Bluetooth dipadukan dengan FileSystem (LittleFS), LCD dan Clink FreeRTOS. Komunikasi ini bisa dimanfaatkan contohnya untuk penggantian SSID dan password WiFi
 
+### BluetoothHandlerExample
+Menerima pesan lewat bluettooth, menyimpan data dalam filesuystem sekalogus menampilkan ke LCD dan membalas pesan lewat komunika bluettooth serial dengan perangkat lain sepertismartphone
