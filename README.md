@@ -50,12 +50,18 @@ pio run -d ProjectXX
 ```
 
 ## Example
-- BlinkExample
-Menjalankan blink secara FreeRTOS 
+### BlinkExample
+Menjalankan blink secara FreeRTOS. Blink module bisa dimanfaatkan untuk indikator system normal dengan cara
+- jika sistem normal blink berkedip dengan durasi 500 ms
+- Jika sistem ada kendala blin berkedip lebih cepat dari 500ms  
 
-- LCDExample
-Menjalankan Animasi running text di baris ke-2 pada LCD secara FreeRTOS bersamaan dengan blink yang juga DreeRTOS
+### LCDExample
+Menjalankan Animasi running text di baris ke-2 pada LCD secara FreeRTOS bersamaan dengan blink yang juga DreeRTOS. Dengan LCD onteraksi dengan manusia menjadi lebih mudah
 
-- StorageExample
-Interaksi dengan FileSystem (LittleFS) dikombinasikan dengan LCD dan Clink FreeRTOS
+
+### StorageExample
+Interaksi dengan FileSystem (LittleFS) dikombinasikan dengan LCD dan Clink FreeRTOS. Dengan memanfaatkan penyimpanan di file system, program bisa lebih dinamis misalnyaa untuk penyimpanan SSID dan password WiFi
+
+### BluetoothExample
+Interaksi dengan Bluetooth dipadukan dengan FileSystem (LittleFS), LCD dan Clink FreeRTOS. Komunikasi ini bisa dimanfaatkan contohnya untuk penggantian SSID dan password WiFi
 
