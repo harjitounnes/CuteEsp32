@@ -1,7 +1,9 @@
 #pragma once
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
-#include <string>
+// #include <Wire.h>
+// #include <LiquidCrystal_I2C.h>
+// #include <string>
+#include <LCD_I2C.h>
+
 
 class LCDModule {
 public:
@@ -12,7 +14,7 @@ public:
     void setText(const String& text1, const String& text2);
 
 private:
-    LiquidCrystal_I2C lcd;
+    LCD_I2C lcd;
     SemaphoreHandle_t mutex;
 
     static void taskRunner(void *param);

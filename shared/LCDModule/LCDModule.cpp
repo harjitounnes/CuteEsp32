@@ -10,7 +10,7 @@ LCDModule::LCDModule(uint8_t addr, uint8_t cols, uint8_t rows)
 
 void LCDModule::begin() {
     lcd.init();
-    lcd.backlight();
+    lcd.backlight(true);
 }
 
 void LCDModule::start() {
@@ -39,7 +39,7 @@ void LCDModule::taskLoop() {
             line1 += ' ';
         }
        
-        lcd.print(line1);
+        lcd.print(line1.c_str());
 
         String displayText;
 
@@ -54,7 +54,7 @@ void LCDModule::taskLoop() {
             segment += ' ';
         }
         lcd.setCursor(0, 1);
-        lcd.print(segment);
+        lcd.print(segment.c_str());
 
         start++;
         if (start > displayText.length()) start = 0;
