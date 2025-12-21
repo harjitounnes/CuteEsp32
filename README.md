@@ -49,3 +49,13 @@ python -m venv venv
 pio run -d ProjectXX
 ```
 
+## Example
+- BlinkExample
+Menjalankan blink secara FreeRTOS 
+
+- LCDExample
+Menjalankan Animasi running text di baris ke-2 pada LCD secara FreeRTOS bersamaan dengan blink yang juga DreeRTOS
+
+- StorageExample
+Interaksi dengan FileSystem (LittleFS) dikombinasikan dengan LCD dan Clink FreeRTOS
+
