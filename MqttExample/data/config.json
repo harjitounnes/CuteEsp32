@@ -1,0 +1,13 @@
+{
+    "ssid": "ICON+",
+    "password": "M12@n0@mrq@15@r@",
+    "version": "1.0.0",
+    "update_url": "http://<IP>:3000/firmware/check.json",
+    "mqtt_host": "192.168.18.85",
+    "mqtt_port": 1883,
+    "mqtt_username": "fablab",
+    "mqtt_password": "f@bl@b",
+    "mqtt_client_id": "esp32_client",
+    "mqtt_subscribe_topic": "esp32/subscribe",
+    "mqtt_publish_topic": "esp32/publish"   
+}
