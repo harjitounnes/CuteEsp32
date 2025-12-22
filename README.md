@@ -54,6 +54,8 @@ pio run -d ProjectXX
 Menjalankan blink secara FreeRTOS. Blink module bisa dimanfaatkan untuk indikator system normal dengan cara
 - jika sistem normal blink berkedip dengan durasi 500 ms
 - Jika sistem ada kendala blin berkedip lebih cepat dari 500ms  
+- Tutorial bisa diakses di [sini](https://e-project-tech.com/blink-module-secara-freertos-di-esp32/)
+
 
 ### LCDExample
 Menjalankan Animasi running text di baris ke-2 pada LCD secara FreeRTOS bersamaan dengan blink yang juga DreeRTOS. Dengan LCD onteraksi dengan manusia menjadi lebih mudah
